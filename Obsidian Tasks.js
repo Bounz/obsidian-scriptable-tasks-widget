@@ -105,7 +105,7 @@ function createOneListWidget(mainStack, taskLists, today, displayTasks, textSize
                 let more = stack.addText("See more...")
                 more.font = Font.semiboldRoundedSystemFont(textSize);
                 more.textColor = new Color("#8f6fff");
-                more.url = `obsidian://advanced-uri?vault=${vault}&daily=true&heading=` + title.text.replaceAll(" ", "%20");
+                more.url = `obsidian://advanced-uri?vault=${vault}&daily=true`;
                 height += textSize * 1.25
             }
             stack.minimumScaleFactor = 1;
